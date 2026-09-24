@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>习录 · 清空记录</title>
+<body style="font:14px/1.7 system-ui;padding:40px;color:#333">
+<p>正在清空习录的全部记录（浏览器会先自动下载一份备份）…</p>
+<p style="color:#888">若浏览器未自动跳转，请手动打开：<code>Time.html?wipe=1</code></p>
+<script>
+  // 与 Time.html 同为 file:// 源，localStorage 互通；跳过去由页面自己执行清空
+  location.replace('Time.html?wipe=1');
+</script>
+</body>
